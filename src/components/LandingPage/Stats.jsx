@@ -1,21 +1,20 @@
 import React from 'react'
-import { stats } from '../../../constants'
 
 const Stats = () => {
   return (
-    <div className='flex justify-center items-center flex-row  sm:mb-20 mb-6 w-full'>
-        <div className='flex justify-around w-full items-center'>
-            {stats.map((stat) =>(
-                <div key={stat.id} className='flex-1 flex justify-start items-center flex-row m-3'>
-                    <h4 className="font-poppins font-semibold xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">
-                        {stat.value}
-                    </h4>
-                    <p className="font-poppins font-normal xs:text-[20.45px] text-[15.45px] xs:leading-[26.58px] leading-[21.58px] text-gradient uppercase ml-3">
-                        {stat.title}
-                    </p>
-                </div>
-            ))},
-        </div>
+    <div className='flex justify-between sm:flex-col w-[80%] sm:w-full md:grid md:grid-cols-2 sm:px-[20px] sm:gap-[30px]'>
+            <div className='flex items-center'>
+                <h4 className="font-poppins font-semibold xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">User Active</h4>
+                <p className="font-poppins font-normal xs:text-[20.45px] text-[15.45px] xs:leading-[26.58px] leading-[21.58px] text-gradient uppercase ml-3">3800+</p>
+            </div>
+            <div className='flex items-center'>
+                <h4 className="font-poppins font-semibold xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Trusted by Company</h4>
+                <p className="font-poppins font-normal xs:text-[20.45px] text-[15.45px] xs:leading-[26.58px] leading-[21.58px] text-gradient uppercase ml-3">230+</p>
+            </div>
+            <div className='flex items-center'>
+                <h4 className="font-poppins font-semibold xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Transaction</h4>
+                <p className="font-poppins font-normal xs:text-[20.45px] text-[15.45px] xs:leading-[26.58px] leading-[21.58px] text-gradient uppercase ml-3">$230M+</p>
+            </div>
     </div>
   )
 }
