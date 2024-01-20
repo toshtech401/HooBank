@@ -14,7 +14,7 @@ const Hero = () => {
                 </p>
             </div>
             <div className="flex flex-row justify-between items-center gap-[40px]">
-                <h1 className=" font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[55px]">
+                <h1 className=" font-poppins font-semibold ss:text-[72px] text-[52px] sm:text-[20px] text-white leading-[55px]">
                     The Next <br className="sm:hidden" />{" "}
                     <span className="text-gradient">Generation</span>{" "}
                 </h1>
@@ -22,7 +22,7 @@ const Hero = () => {
                     <GetStarted />
                 </div>
             </div>
-            <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
+            <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] sm:text-[20px] text-white ss:leading-[100.8px] leading-[75px] w-full">
                 Payment Method.
             </h1>
             <p className='max-w-[470px] mt-5 font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]'>
