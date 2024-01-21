@@ -13,12 +13,12 @@ const Navbar = () => {
       <div className='flex justify-around items-center p-3 w-full'>
         <Image height={150} width={150} src={"logo.svg"}/>
         <ul className='flex gap-5 text-white sm:hidden'>
-          <li className='font-poppins font-normal cursor-pointer text-[16px] hover:text-secondary text-dimWhite'>Home</li>
-          <li className='font-poppins font-normal cursor-pointer text-[16px] hover:text-secondary text-dimWhite'>About Us</li>
-          <li className='font-poppins font-normal cursor-pointer text-[16px] hover:text-secondary text-dimWhite'>Features</li>
-          <li className='font-poppins font-normal cursor-pointer text-[16px] hover:text-secondary text-dimWhite'>Solution</li>
+          <li className='font-poppins font-normal cursor-pointer text-[20px] hover:text-secondary text-dimWhite'>Home</li>
+          <li className='font-poppins font-normal cursor-pointer text-[20px] hover:text-secondary text-dimWhite'>About Us</li>
+          <li className='font-poppins font-normal cursor-pointer text-[20px] hover:text-secondary text-dimWhite'>Features</li>
+          <li className='font-poppins font-normal cursor-pointer text-[20px] hover:text-secondary text-dimWhite'>Solution</li>
         </ul>
-        <button className='hidden sm:block bg-blue-gradient p-2 text-black' onClick={() => setToggle(!toggle)}>
+        <button className='hidden sm:block rounded-xl bg-blue-gradient p-2 text-black' onClick={() => setToggle(!toggle)}>
           {
             toggle?  <RxCross1 /> :  <IoIosMenu /> 
           }
